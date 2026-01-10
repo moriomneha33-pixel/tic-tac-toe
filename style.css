@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4); /* ROSE PINK */
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#status {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cell {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #ffe4ec;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff1493; /* DEEP PINK ICONS */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.cell:hover {
+  background: #ffd1dc;
+}
+
+/* RESULT SCREEN */
+.result {
+  background: #87ceeb; /* SKY BLUE */
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  background: #8b0000; /* DEEP RED */
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a00000;
+}
