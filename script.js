@@ -64,3 +64,4 @@ function resetGame() {
   resultScreen.classList.add("hidden");
   gameScreen.classList.remove("hidden");
 }
+
